@@ -1,0 +1,11 @@
+@import url('components.css');
+body {
+    background-color: #000000;
+}
+
+:root {
+    --acco-table-width: 12rem;
+    --btn-colors-off: rgb(105, 173, 162);
+    --btn-colors-on: rgb(175, 255, 242);
+    --chat-bg: 175, 255, 242;
+}

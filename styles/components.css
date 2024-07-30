@@ -1,0 +1,148 @@
+.acc-table .td2 {
+    width: 145px;
+}
+
+.acc-table .td3 {
+    width: 45px;
+}
+
+.acc-table img {
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(187, 241, 232);
+    border-radius: 50%;
+}
+
+.acc-table button {
+    border-radius: 10%;
+    background-color: var(--btn-colors-off);
+    transition: background-color .3s;
+    opacity: .3;
+}
+
+.msj-table .td1 {
+    width: 85%;
+}
+
+.msj-table textarea {
+    height: 2.5rem;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    resize: none;
+}
+
+.msj-table button {
+    transform: translateY(-5%);
+    font-size: 1.3rem;
+    border-radius: 10%;
+    background-color: var(--btn-colors-off);
+    transition: background-color .3s;
+    opacity: .3;
+}
+
+.mobile-main-table {
+    display: none;
+}
+
+.desk-main-table .td1 {
+    background-image: url("../media/user-png-33842.png");
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: calc(90vh - 6rem);
+}
+
+.desk-main-table .td1 button:hover {
+    background-color: var(--btn-colors-on);
+    opacity: 1;
+}
+
+.desk-main-table .td2 {
+    background-color: rgba(var(--chat-bg), 35%);
+    height: calc(90vh - 6rem);
+}
+
+@media (max-width: 700px) {
+    .desk-main-table {
+        display: none;
+    }
+    .mobile-main-table {
+        display: block;
+    }
+    .mobile-main-table .tr1 td {
+        background-image: url("../media/user-png-33842.png");
+        background-color: green;
+        width: 100vw;
+        height: calc(70vh - 6rem);
+    }
+    .mobile-main-table .tr2 td {
+        background-color: gold;
+        height: calc(30vh - 6rem);
+    }
+}
+
+.fc-btn {
+    width: 4vh;
+    height: 4vh;
+    background-color: var(--btn-colors-off);
+    border: none;
+    border-radius: 10%;
+    opacity: .7;
+    position: relative;
+    /*  CALCULO LA POSICION QUE DESEO EN RELACION A DONDE ESTA Y LE RESTO EL TAÑAMO DEL ELEMENTO */
+    top: calc(50% - 4vh);
+    left: calc(98% - 4vh);
+    /* CALCULO LA POSICION QUE DESEO EN RELACION A DONDE ESTA Y LE RESTO EL TAÑAMO DEL ELEMENTO  */
+    transition: opacity .3s, background-color .3s;
+}
+
+.dialog {
+    position: relative;
+    z-index: 10000;
+    bottom: -35%;
+    color: red;
+    text-align: center;
+    max-width: 90%;
+    left: 5%;
+}
+
+#fc {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+    display: none;
+    text-align: center;
+    background-image: url("../media/user-png-33842.png");
+    background-size: cover;
+    background-position: center;
+    background-color: green;
+    background-repeat: no-repeat;
+}
+
+.fc-dialog {
+    position: fixed;
+    z-index: 1000000;
+    bottom: 0%;
+    color: red;
+    max-width: 90%;
+    left: 5%;
+}
+
+.fc-fc-btn {
+    width: 4vh;
+    height: 4vh;
+    background-color: var(--btn-colors-off);
+    border: none;
+    border-radius: 10%;
+    opacity: .7;
+    position: absolute;
+    /*  CALCULO LA POSICION QUE DESEO EN RELACION A DONDE ESTA Y LE RESTO EL TAÑAMO DEL ELEMENTO */
+    bottom: calc(5% - 4vh);
+    left: calc(98% - 4vh);
+    /* CALCULO LA POSICION QUE DESEO EN RELACION A DONDE ESTA Y LE RESTO EL TAÑAMO DEL ELEMENTO  */
+    transition: opacity .3s, background-color .3s;
+}
