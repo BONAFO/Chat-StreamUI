@@ -1,4 +1,6 @@
 @import url('components.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("sw2.css");
 body {
     background-color: #000000;
 }
@@ -8,4 +10,20 @@ body {
     --btn-colors-off: rgb(105, 173, 162);
     --btn-colors-on: rgb(175, 255, 242);
     --chat-bg: 175, 255, 242;
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+input,
+textarea,
+button {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }

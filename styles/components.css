@@ -17,7 +17,6 @@
     border-radius: 10%;
     background-color: var(--btn-colors-off);
     transition: background-color .3s;
-    opacity: .3;
 }
 
 .msj-table .td1 {
@@ -38,7 +37,6 @@
     border-radius: 10%;
     background-color: var(--btn-colors-off);
     transition: background-color .3s;
-    opacity: .3;
 }
 
 .mobile-main-table {
@@ -59,11 +57,17 @@
 }
 
 .desk-main-table .td2 {
+    display: flex;
     background-color: rgba(var(--chat-bg), 35%);
     height: calc(90vh - 6rem);
+    overflow: hidden;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 550px) {
+    .msj-table {
+        margin-top: -1.5vh;
+        text-align: center;
+    }
     .desk-main-table {
         display: none;
     }
@@ -72,13 +76,14 @@
     }
     .mobile-main-table .tr1 td {
         background-image: url("../media/user-png-33842.png");
-        background-color: green;
         width: 100vw;
         height: calc(70vh - 6rem);
     }
     .mobile-main-table .tr2 td {
-        background-color: gold;
-        height: calc(30vh - 6rem);
+        display: flex;
+        background-color: rgba(var(--chat-bg), 35%);
+        height: calc(40vh - 6rem);
+        overflow: hidden;
     }
 }
 
@@ -119,7 +124,6 @@
     background-image: url("../media/user-png-33842.png");
     background-size: cover;
     background-position: center;
-    background-color: green;
     background-repeat: no-repeat;
 }
 
@@ -145,4 +149,14 @@
     left: calc(98% - 4vh);
     /* CALCULO LA POSICION QUE DESEO EN RELACION A DONDE ESTA Y LE RESTO EL TAÑAMO DEL ELEMENTO  */
     transition: opacity .3s, background-color .3s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.chat-item {
+    color: #ffffff;
+    word-break: break-all;
+    transition: opacity .3s;
 }
